@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+    <link rel="stylesheet" href="../css/contentCSS.css">
+    <link rel="stylesheet" href="../css/articleStyle.css">
+    <link href="../images/huishilogosingal.png" type="image/x-icon" rel="shortcut icon">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+        h1 {
+            letter-spacing: 3px;
+        }
+
+        .clearFixed:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .content .Con_left {
+            float: left;
+            width: 70%;
+            height: auto;
+            background-color: #fff;
+            border: 2px solid #000000;
+            border-bottom-color: rgba(0, 0, 0, 0);
+            border-top-color: rgba(0, 0, 0, 0);
+            border-left-color: rgba(0, 0, 0, 0);
+        }
+
+        .content .Con_left .Con_left_1 p {
+            text-indent: 25px;
+            line-height: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .content .Con_left .Con_left_2 p {
+            text-indent: 45px;
+            line-height: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .content .Con_right {
+            float: right;
+            width: 29%;
+            height: auto;
+            background-color: #E2EFD9;
+            border: 2px solid #00B050;
+        }
+
+        .content .Con_right p {
+            line-height: 45px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .footer p {
+            line-height: 50px;
+        }
+
+        p {
+            letter-spacing: 1px;
+            /*   */
+            font-size: 20px
+        }
+
+        span {
+            color: #00B050;
+            font-weight: 700;
+
+        }
+    </style>
+    <div class="clearfix">
+        <div class="container">
+            <nav class="navbar navbar-expand-md fixed-top" style="background-color:#fdfdfd">
+                <a class="navbar-brand logo-brand" href="#">
+                    <img src="../images/huishibigfont.png" width="auto" height="70" class="huishiLogo d-inline-block align-top" alt="">
+                </a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                                                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button> -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">首页<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link" href="#" role="button" id="articleDropdown"
+                                    data-toggle="dropdown">日语文章</a>
+                                <ul class="dropdown-menu" aria-labelledby="articleDropdown">
+
+                                    <li><a class="dropdown-item first-item" href="#" id="dropdownMenuLinkSecond">恋爱</a>
+                                    </li>
+                                    <li><a class="dropdown-item first-item" href="#">战争</a></li>
+                                    <li><a class="dropdown-item first-item" href="#">社会</a></li>
+                                    <li><a class="dropdown-item first-item" href="#">悬疑</a></li>
+                                    <li><a class="dropdown-item first-item" href="#">冒险</a></li>
+                                    <li class="dropdown-divider"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">日语单词</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link" href="#" role="button" id="cultureDropdown"
+                                    data-toggle="dropdown">日本文化</a>
+                                <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
+                                    <li><a class="dropdown-item first-item" href="japanAddress.html">地理</a></li>
+                                    <li><a class="dropdown-item first-item" href="#">历史</a></li>
+                                    <li><a class="dropdown-item first-item" href="#">人文</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                                                        <a class="nav-link" href="./function/japaneseReading.html">日语阅读</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="./function/japaneseTranslate.html">日语翻译</a>
+                                                    </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="japaneseBase.html">日语基础</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">日语语法</a>
+                            </li>
+                        <!-- <li class="nav-item">
+                                                        <a class="nav-link" href="#">日语单词</a>
+                                                    </li> -->
+                    </ul>
+                    <form class="form-inline ml-3 mt-md-0">
+                        <a href="../user/login.html" class="btn btn-outline-primary my-2 my-sm-0">登入</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="articleBox col-md-8">
+                <div class="content clearfix">
+                    <div class="Con_left">
+                        <div class="Con_left_1">
+                            <h1 style="font-size: 33px;">【日本民间故事】如梦般的相遇</h1>
+                            <p>
+                                むかしむかし、日本に仕事で来ていた<span>オランダ</span>人が国へ帰る時、<span>通訳</span>の人たちが<span>船</span>まで
+                                <span>見送り</span>に来ました。
+                                そして<span>長崎</span>の<span>港</span>にいる船の中で、
+                                お別れのパーティーをする事にしたのです。<span>通訳仲間</span>が船の中で<span>酒</span>を<span>酌み交わして</span>いると、
+                                すっかり上<span>機嫌</span>になったオランダ人が言いました。「みなさん方のおかげで、無事に仕事を<span>済む</span>事が出来ました。感謝します。ありがとう。
+                                そのお礼に、何でもお<span>望み</span>の物を<span>本国</span>からお送りしましょう」
+                            </p>
+                            <p>
+                                通訳の人たちは<span>喜んで</span>、あれやこれやと色々な物を頼みました。
+                                でも、その中でただ一人、西田長十郎(にしだちょうじゅうろう)だけが<span>黙って</span>います。
+                                通訳はみんな長崎の<span>人間</span>でしたが、この西田という<span>通訳</span>は<span>江戸</span>からやって来たのです。
+                            </p>
+                            <p>
+                                長十郎が何も言わずに黙っているので、オランダ人が<span>尋ねました</span>。「長十郎さん、あなたは、何をお<span>望み</span>ですか?
+                            </p>
+                            <p>
+                                「はい。わたしには、別に欲しい物はありません。ただ」
+                            </p>
+                            <p>
+                                「ただ?」
+                            </p>
+                            <p>
+                                「実は、残してきた<span>妻子</span>の事が気がかりなのです。江戸からこの長崎へ来てから、はや六年。
+                                その間、妻子の顔を見ておりませぬ。妻子がいま、どの様に<span>暮らして</span>おりますやら。それを知りたいだけが、願いでございます」
+                            </p>
+                            <p>
+                                するとオランダ人は、にっこり笑って言いました。「妻子を思う気持ち、よく分かります。
+                                そしてその願いは、<span>簡単</span>に<span>叶います</span>」
+                            </p>
+                            <p>
+                                「本当ですか?」
+                            </p>
+                            <p>
+                                「はい、すぐに、叶えてあげましょう。ただし、決して口を聞いてはなりませんよ。よろしいですか」
+                            </p>
+                            <p>
+                                「はい、決して」
+                            </p>
+                            <p>
+                                長十郎が<span>約束</span>すると、オランダ人は<span>倉庫</span>から持って来たガラスの大きなはちに、水を<span>なみなみ</span>と入れました。
+                            </p>
+                            <p>
+                                そして、「さあ、妻子を<span>思い浮かべ</span>ながら、はちの中をじーっと見つめてください。
+                                そうすれば、どんなに離れていても妻子の様子がわかります」と、いうのです。
+                                長十郎は言われた通り、水の中をじーっと見ていました。
+                                すると水中に、自分の家の近くの山や<span>林</span>がはっきりと見えて来たのです。
+                                (これは、<span>不思議</span>な)なおも<span>見続けて</span>いると、いつの間にやら長十郎は、自分の家の<span>門</span>の前まで来ていました。
+                                門は<span>修理</span>中だったので、長十郎はそばの木に<span>登って</span>家をのぞいて見ました。
+                                すると<span>女房</span>が<span>うつむいて</span>、<span>庭先</span>で洗濯仕事をしています。
+                                (何とかして、こっちを<span>向いて</span>くれないものか)
+                            </p>
+                            <p>
+                                じーっと待っていると、女房は洗濯の手を休めて、ひょいとこちらを見ました。
+                            </p>
+                            <p>
+                                長十郎と女房の、二人の目が合いました。
+                            </p>
+                            <p>
+                                (あっ・・・)長十郎は思わず、何かを言おうとしました。
+                            </p>
+                            <p>
+                                (あっ・・・)女房の方も、長十郎に言葉をかけようとしました。
+                            </p>
+                            <p>
+                                でもその<span>途端</span>、オランダ人が<span>はち</span>の水を<span>かき回した</span>ので、それっきり何もかも消えてしまい。
+                            </p>
+                            <p>
+                                長十郎は、がっかりして、「残念。もう少しで、妻と言葉を<span>交わす</span>事が出来たのに」と、言うと、オランダ人は、
+                                「すみません。でも、もしもここでお話しをなさると、お二人の<span>命</span>にかかわります。あなたが言葉をかけようとしたので、
+                                <span>急いで</span>消したのです」と、言いました。
+                            </p>
+                            <p>
+                                それから数ヶ月後、ようやく長崎での仕事を<span>終えた</span>長十郎が江戸の家に帰って来て、あの時の事を女房に話すと、
+                                「まあ、そうでしたか。あの時、<span>かきね</span>の外にあなたがいらっしゃるのを見て、
+                                わたしも何か申し上げようと思いました。
+                                ところが、にわかに<span>夕立ち</span>が降り出して、お<span>姿</span>が見えなくなったのですよ。
+                                <span>てっきり</span>夢かと思っていましたが、本当だったのですね」と、言ったそうです。
+                            </p>
+                        </div>
+                        <div class="Con_left_2">
+                            <h2 style="letter-spacing:1px;  font-size: 33px;">
+                                译文：
+                            </h2>
+                            <p>
+                                很久很久以前,有个来日本工作的荷兰人回国的时候,翻译员们送他到船上。然后决定在长崎港口的船上举行告别派对。翻译们在船上喝酒的时候,荷兰人兴致高昂。“多亏了大家,我才能顺利地完成工作。谢谢。谢谢。作为回礼,大家有什么想要的，我可以从荷兰寄给大家”
+                            </p>
+                            <p>
+                                翻译员们很高兴,拜托了各种各样的东西。但是,其中只有一个人,西田长十郎沉默着。翻译都是长崎人,这个叫西田的翻译是从江户来的。
+                            </p>
+                            <p>
+                                长十郎什么也没说就沉默了,荷兰人问: “长十郎先生,你想要什么?
+                            </p>
+                            <p>
+                                “是的,我没有别的想要的东西,只是...”
+                            </p>
+                            <p>
+                                “只是?”
+                            </p>
+                            <p>
+                                “其实,我很担心留下的妻子。从江户来到长崎已经六年了。在此期间,没有看到妻子的脸。
+                            </p>
+                            <p>
+                                妻子现在过着怎样的生活呢?我只是想知道这一点,这是我的愿望”
+                            </p>
+                            <p>
+                                于是荷兰人笑着说: “我很理解你对妻子的思念,而且这个愿望很容易实现。”
+                            </p>
+                            <p>
+                                “真的吗?”
+                            </p>
+                            <p>
+                                “是的,可以马上给你实现。但是,绝对不能说话。可以吗?”
+                            </p>
+                            <p>
+                                “好的,绝不”
+                            </p>
+                            <p>
+                                当长十郎答应的时候,荷兰人把水全部放进了从仓库里拿来的大罐子里。
+                            </p>
+                            <p>
+                                然后,他说:
+                                “来,一边想着妻子,一边凝视着罐子里面。这样的话,无论相隔多远,都能了解妻子的情况”。长十郎正如他所说,一直盯着水里看。于是,在水中,清楚地看到了自己家附近的山和树林。(这真实不可思议)
+                                还在继续看,不知不觉,长十郎来到了自己家的门前。因为门正在修理中,长十郎爬上旁边的树,望着房子。于是妻子低着头,在院子里做洗衣工作。(不管怎样,能不能转向这边)
+                            </p>
+                            <p>
+                                一动不动地等着,妻子休息了洗衣服的手,突然看到了这边。
+                            </p>
+                            <p>
+                                长十郎和妻子两人的目光相合了。
+                            </p>
+                            <p>
+                                (啊・・・) 长十郎不由得想说点什么。
+                            </p>
+                            <p>
+                                (啊・・・) 老婆也想对长十郎说几句话。
+                            </p>
+                            <p>
+                                但是就在这时,荷兰人搅浑了罐子里的水,一切都消失了。
+                            </p>
+                            <p>
+                                长十郎失望地说: “很遗憾。差一点就能和妻子交谈了,” 荷兰人说,“对不起。但是,如果在这里说的话,关系到两个人的生命。因为你想说话,所以就急忙消失了”。
+                            </p>
+                            <p>
+                                几个月后,终于在长崎完成工作的长十郎回到了江户的家,把当时的事情告诉了妻子,她说:“嗯,是吗?那时,看到你在围墙外面,我也想说点什么。但是,突然下起阵雨,便看不到你的身影了。我还以为一定是梦,原来是真的啊”。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Con_right">
+                        <h1 style="font-size: 33px;">单词：</h1>
+                        <p>
+                            1. 通訳（つうやく）①【名】翻译、口译、翻译者、译员。
+                            <br />
+                            2. 酌み交わす（くみかわす）④【动】对饮。
+                            <br />
+                            3. 機嫌（きげん）◎【名】心情、情绪。
+                            <br />
+                            4. 黙る（だまる）②【动】不说话、不做声、沉默不语。
+                            <br />
+                            5. 長崎（ながさき）②【名】日本地名。
+                            <br />
+                            6. 尋ねる（たずねる）③【动】寻、找、寻找。
+                            <br />
+                            7. 妻子（さいし）①【名】妻子。
+                            <br />
+                            8. 門（かど）①【名】门、门前、门外、门口（家の門）。
+                            <br />
+                            9. 望み（のぞみ）◎【名】希望、愿望、期望。
+                            <br />
+                            10. 暮らす（くわす）◎【动】生活、度日、
+                            <br />
+                            11. 思い浮かべる（おもいうかべる）⑥【动】想起、忆起。
+                            <br />
+                            12. 女房（にょうぼう）①【名】日本中世、近世时期对妇女或女子的称呼。
+                            <br />
+                            13. 登る（のぼる）◎【动】上、登、攀登。
+                            <br />
+                            14. 急いで（いそいで）③【副】急忙地、快、赶快。
+                            <br />
+                            15. 庭先（にわさき）◎【名】（院子接近房檐的部分）庭前、院子。
+                            <br />
+                            16. 交わす（かわす）③或◎【动】交替、交换。
+                            <br />
+                            17. 垣根（かきね）②或③【名】围墙。
+                            <br />
+                            18. オランダ◎【名】荷兰。
+                            <br />
+                            19. 船（ふね）①【名】船。
+                            <br />
+                            20. 港（みなと）◎【名】港、港口；码头。
+                            <br />
+                            21. 見送り（みおくり）◎【名】送行。
+                            <br />
+                            22. 仲間（なかま）③【名】同志、朋友、伙伴、一伙、同事。
+                            <br />
+                            23. 酒（さけ）◎【名】清酒。
+                            <br />
+                            24. 済む（すむ）①【动】（事情）结束、完结、完了。
+                            <br />
+                            25. 人間（にんげん）◎【名】人，人类。品质；人品，品格，为人。人间，社会，世上。
+                            <br />
+                            26. 本国（ほんごく）①【名】本国，祖国，老家，故乡，老家，故乡。
+                            <br />
+                            27. 喜んで（よろこんで）③【副】高兴地，非常愿意地。
+                            <br />
+                            28. 江戸（えど）◎【名】日本地名。
+                            <br />
+                            29. 簡単（かんたん）◎【ナ形】简单，简易，容易，轻易，简便。
+                            <br />
+                            30. 叶う（かなう）②【动】能实现，能如愿以偿。
+                            <br />
+                            31. 決して（けっして）◎【副】绝对（不），断然（不）。
+                            <br />
+                            32. てっきり③【副】满以为是，原以为一定
+                            <br />
+                            33. てっきり③【副】满以为是，原以为一定是。
+                            <br />
+                            34. 約束（やくそく）◎【名】约，约定，商定，约会。
+                            <br />
+                            35. 倉庫（そうこ）①【名】仓库。
+                            <br />
+                            36. 姿（すがた）①【名】姿态，举止，身影，姿势，形象。
+                            <br />
+                            37. なみなみ③【副】满满地。
+                            <br />
+                            38. 不思議（ふしぎ）◎【ナ形】难以想象，不可思议。
+                            <br />
+                            39. 林（はやし）③或◎【名】林，树林；林，林立。
+                            <br />
+                            40. 修理（しゅうり）①【动】修理，修缮。
+                            <br />
+                            41. 俯く（うつむく）③或◎【动】俯首，垂头，低头，脸朝下。
+                            <br />
+                            42. 向く（むく）◎【动】向，朝，对，正对；倾向，趋向；适合，对路。
+                            <br />
+                            43. 途端（とたん）◎【名】正当……时候，
+                            <br />
+                            44. 刚一……时候，一……就……。
+                            <br />
+                            45. 鉢（はち）②【名】盆。
+                            <br />
+                            46. かき回す（かきまわす）④或◎【动】搅拌，搅和。
+                            <br />
+                            47. 命（いのち）①【名】生命。
+                            <br />
+                            48. 終える（おえる）◎【动】做完，完成，结束。
+                            <br />
+                            49. 夕立（ゆうだち）◎【名】骤雨；傍晚的雷阵雨。
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <footer class="container footer">
+        <p class="float-right"><a href="#">回到顶部</a></p>
+        <p>© 2019 汇世学习平台 </p>
+    </footer>
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>

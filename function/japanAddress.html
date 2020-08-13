@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <title>地名</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/indexStyle.css">
+        <link rel="stylesheet" href="../css/contentCSS.css">
+        <link rel="stylesheet" href="../css/articleStyle.css">
+		<link href="../images/huishilogosingal.png" type="image/x-icon" rel="shortcut icon">
+        <script src="../js/jquery.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <style type="text/css">
+        #box{
+            margin-top: 150px;
+        }
+			.clearFixed:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.header .header_left{
+				margin-left: 10px;
+				margin-right: 25px;
+				float: left;
+			}
+			.header .header_right{
+				margin-right: 10px;
+				margin-left: 25px;
+				margin-top: 200px;
+			}
+			
+			.header .header_right h2{
+				text-indent: 45px;
+				text-align: left;
+			}
+			
+			.header .header_right p{
+				text-indent: 45px;
+				line-height:40px;
+			}
+
+
+			.content .flex-container{
+				display: flex;
+				justify-content: space-between;
+			}
+			.content .flex-container .flex-item_left{
+				margin-top: 50px;
+			}
+
+			.content .flex-container .flex-item_right{
+				margin-top: 50px;
+			}
+
+			.content .flex-container span{
+				line-height: 60px;
+			}
+			
+			.footer{
+				height: 320px;
+				width: 100%;
+				background-color: #FFF2CC;
+			}
+			.footer p{
+				line-height:50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+            <div class="container">
+                    <nav class="navbar navbar-expand-md fixed-top" style="background-color:#fdfdfd">
+                        <a class="navbar-brand logo-brand" href="#">
+                            <img src="../images/huishibigfont.png" width="auto" height="70" class="d-inline-block align-top" alt="">
+                        </a>
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="../index.html">首页<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                            >日语文章</a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            
+                                            <li><a class="dropdown-item first-item" href="#" id="dropdownMenuLinkSecond">恋爱</a></li>
+                                            <li><a class="dropdown-item first-item" href="#">战争</a></li>
+                                            <li><a class="dropdown-item first-item" href="#">社会</a></li>
+                                            <li><a class="dropdown-item first-item" href="#">悬疑</a></li>
+                                            <li><a class="dropdown-item first-item" href="#">冒险</a></li>
+                                            <li class="dropdown-divider"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">日语单词</a>
+                                </li>
+                                <li class="nav-item">
+                                        <div class="dropdown">
+                                            <a class="nav-link" href="#" role="button" id="cultureDropdown"
+                                                data-toggle="dropdown">日本文化</a>
+                                            <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
+                                                <li><a class="dropdown-item first-item" href="function/japanAddress.html">地理</a></li>
+                                                <li><a class="dropdown-item first-item" href="#">历史</a></li>
+                                                <li><a class="dropdown-item first-item" href="#">人文</a></li>
+                                            </ul>
+                                        </div>            
+                                    </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="./function/japaneseReading.html">日语阅读</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./function/japaneseTranslate.html">日语翻译</a>
+                                </li> -->
+                                <li class="nav-item">
+                                        <a class="nav-link" href="japaneseBase.html">日语基础</a>
+                                    </li>
+									<li class="nav-item">
+											<a class="nav-link" href="#">日语语法</a>
+										</li>
+                            </ul>
+                            <form class="form-inline ml-3 mt-md-0">
+                                <a href="../user/login.html" class="btn btn-outline-primary my-2 my-sm-0">登入</a>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+		<div id="box" class="clearfix">
+			<div class="container-fluid">
+                <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+				<br />
+				<div class="header_left" style="text-align: center">
+					<img src="../images/img1.jpg" alt="日本地图"/>
+				</div>
+				<div class="header_right">
+					<h2 style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: 700;">
+						地域分布：
+					</h2>
+					<p style="letter-spacing:1px; font-family: 楷体; font-size: 25px; font-weight: 700;">
+						日本国（日语：にほんこく），简称“日本”，领土由北海道、本州、四国、九州四个大岛及6800多个小岛组成。
+						日本共有1都、1道、2府、43县都是平行的一级行政区，直属中央政府，都拥有自治权。日本中央政府部门叫“省”，
+						比如“厚生劳动省”等。
+						<!-- <span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px;font-weight: 300;">
+							（摘自百度）
+						</span> -->
+						<!-- <p style="margin-top: 100px; letter-spacing:1px; font-family: 仿宋; font-size: 25px;font-weight: 300; ">
+							（图源来自百度百科）
+						</p> -->
+					</p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="content">
+				<div class="content_1">
+					<div class="flex-container row">
+							<div class="col-md-2"></div>
+						<div class="flex-item_left col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; background-color: #008B8B; color: #fff; font-weight: bold;">
+							北海道（ほっかいどう）)③「名」北海道
+						</span>
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							东北地方：
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							青森県（あおもりけん）④「名」青森县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							岩手県（いわてけん）③「名」岩手县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							宮城県（みやぎけん）③「名」宫城县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							秋田県（あきたけん）③「名」秋田县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							山形県（やまがたけん）⑤「名」山形县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							福島県（ふくしまけん）⑤「名」福岛县
+						</span>
+						</div>
+						<div class="flex-item_right col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							关东地方：
+						</span>
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; background-color: #8B0000; color: #fff; font-weight: bold;">
+							東京都（とうきょぅと）③「名」东京都
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							茨城県（いばらきけん）④「名」茨(cí)城县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							栃木県（とちぎけん）③「名」枥(lì)木县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							群馬県（ぐんまけん）③「名」群马县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							埼玉県（さいたまけん）④「名」埼玉县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							千葉県（ちばけん）②「名」千叶县
+						</span>
+
+							<br />
+							<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+							神奈川県（かながわけん）④「名」神奈川县
+						</span>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<img src="../images/20190704171329365.png" style="width: 100%;" />
+				</div>
+				<div class="content_2">
+					<div class="flex-container row">
+							<div class="col-md-2"></div>
+						<div class="flex-item_left col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								中部地方：
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								新潟県（にいがたけん）④「名」新泻县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								富山県（とやまけん）③「名」富山县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								石川県（いしかわけん）④「名」石川县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								静岡県（しずおかけん）④「名」静冈县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								愛知県（あいちけん）③「名」爱知县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								近畿地方：
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								三重県（みえけん）②「名」三重县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								滋賀県（しがけん）②「名」滋贺县
+							</span>
+						</div>
+						<div class="flex-item_right col-md-4">
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								福井県（ふくいけん）③「名」福井县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								山梨県（やまなしけん）④「名」山梨县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								長野県（ながのけん）③「名」长野县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								岐阜県（ぎふけん）②「名」岐(qí)阜(fù)县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; background-color: #D3D3D3; color: #fff; font-weight: bold;">
+								京都府（きょうとふ）②「名」京都府
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; background-color: #D3D3D3; color: #fff; font-weight: bold;">
+								大阪府（おおさかふ）④「名」大阪府
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								兵庫県（ひょうごけん）③「名」兵库县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								奈良県（ならけん）②「名」奈良县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								和歌山県（わかやまけん）④「名」和歌山县
+							</span>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<img src="../images/20190704171329365.png" style="width: 100%;" />
+				</div>
+				<div class="content_3">
+					<div class="flex-container row">
+							<div class="col-md-2"></div>
+						<div class="flex-item_left col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								中国地方：
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								鳥取県（とっとりけん）③「名」鸟取县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								島根県（しまねけん）③「名」岛根县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								岡山県（おかやまけん）④「名」冈山县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								広島県（ひろしまけん）④「名」广岛县
+							</span>
+
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								山口県（やまぐちけん）④「名」山口县
+							</span>
+						</div>
+						<div class="flex-item_right col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								四国地方：
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								徳島県（とくしまけん）④「名」德岛县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								香川県（かがわけん）③「名」香川县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								愛媛県（えひめけん）③「名」爱媛县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								高知県（こうちけん）③「名」高知县
+							</span>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<img src="../images/20190704171329365.png" style="width: 100%;" />
+				</div>
+				<div class="content_4">
+					<div class="flex-container row">
+							<div class="col-md-2"></div>
+						<div class="flex-item_left col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								九州地方：
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								福岡県（ふくおかけん）④「名」福冈县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								長崎県（ながさきけん）④「名」长崎县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								佐賀県（さがけん）②「名」佐贺县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								熊本県（くまもとけん）④「名」熊本县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								沖縄県（おきなわけん）④「名」冲绳县
+							</span>
+						</div>
+						<div class="flex-item_right col-md-4">
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								大分県（おおいたけん）④「名」大分县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								宮崎県（みやざきけん）④「名」宫崎县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								鹿児島県（かごしまけん）④「名」鹿儿岛县
+							</span>
+								<br />
+								<span style="letter-spacing:1px; font-family: 仿宋; font-size: 25px; font-weight: bold;">
+								沖縄県（おきなわけん）④「名」冲绳县
+							</span>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<img src="../images/20190704171329365.png" style="width: 100%;" />
+				</div>
+            </div>
+        
+		</div>
+    </div>
+			<!-- <div class="footer">
+				<div class="footer_1">
+					<p style="letter-spacing:2px; font-family: 楷体; font-size: 25px; text-align:center">
+						<br />
+						项目策划：李  颖     项目设计：陆月  王宝悦    文案整理：李文娇  孙婧
+						<br />
+						编辑排版：何悦梦  张美涛    技术开发：金尚熙  张霖
+						<br />
+					</p>
+				</div>
+				<div class="footer_2">
+					<p style="letter-spacing:2px; font-family: 楷体; font-size: 25px; text-align:right">
+						如有侵权请联系
+						<br />
+						李    颖（手机）：18859148256
+						<br />
+						李文娇（手机）：15732649920
+						<br />
+					</p>
+				</div>
+            </div> -->
+            <footer class="container">
+                    <p class="float-right"><a href="#">回到顶部</a>
+                        <p>© 2019 汇世学习平台 </p>
+                    </p>
+                </footer>
+		</div>
+	</body>
+</html>
