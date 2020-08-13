@@ -41,7 +41,7 @@
 
         .jpImgStyle {
             height: 600px;
-            width: auto;
+            width: 100%;
             padding: 0 auto;
         }
 
@@ -51,18 +51,18 @@
         }
     </style>
     <div class="container clearfix">
-        <nav class="navbar navbar-expand-md fixed-top" style="background-color:#fdfdfd">
+        <nav class="navbar navbar-expand-md fixed-top">
             <a class="navbar-brand logo-brand" href="#">
-                <img src="../images/huishibigfont.png" width="auto" height="70" class="d-inline-block align-top" alt="">
+                <img src="../images/huishibigfont.png" width="auto" height="50" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-light navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">首页<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">首页<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
@@ -70,7 +70,8 @@
                                 data-toggle="dropdown">日语文章</a>
                             <ul class="dropdown-menu" aria-labelledby="articleDropdown">
 
-                                <li><a class="dropdown-item first-item" href="#" id="dropdownMenuLinkSecond">恋爱</a></li>
+                                <li><a class="dropdown-item first-item" href="japaneseReading.html"
+                                        id="dropdownMenuLinkSecond">恋爱</a></li>
                                 <li><a class="dropdown-item first-item" href="#">战争</a></li>
                                 <li><a class="dropdown-item first-item" href="#">社会</a></li>
                                 <li><a class="dropdown-item first-item" href="#">悬疑</a></li>
@@ -80,34 +81,40 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">日语单词</a>
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" role="button" id="cultureDropdown"
+                                data-toggle="dropdown">读览日本</a>
+                            <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
+                                <li><a class="dropdown-item first-item" href="japanAddress.html">日本地理</a>
+                                </li>
+                                <li><a class="dropdown-item first-item" href="#">历史文化</a></li>
+                                <li><a class="dropdown-item first-item" href="japanculture.html">人文生活</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
-                            <a class="nav-link" href="#" role="button" id="cultureDropdown"
-                                data-toggle="dropdown">日本文化</a>
-                            <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
-                                <li><a class="dropdown-item first-item" href="function/japanAddress.html">地理</a></li>
-                                <li><a class="dropdown-item first-item" href="#">历史</a></li>
-                                <li><a class="dropdown-item first-item" href="#">人文</a></li>
+                            <a class="nav-link" id="japaneseLearning" data-toggle="dropdown" role="button"
+                                href="#">日语学习</a>
+                            <ul class="dropdown-menu" aria-labelledby="japaneseLearning">
+                                <li>
+                                    <a href="function\japaneseBase.html" class="dropdown-item first-item">日语基础</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item first-item">日语语法</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item first-item">日语单词</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
-                    <!-- <li class="nav-item">
-                                            <a class="nav-link" href="./function/japaneseReading.html">日语阅读</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="./function/japaneseTranslate.html">日语翻译</a>
-                                        </li> -->
+
                     <li class="nav-item">
-                        <a class="nav-link" href="function\japaneseBase.html">日语基础</a>
+                        <a class="nav-link" href="#">个人中心</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">日语语法</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                                            <a class="nav-link" href="#">日语单词</a>
-                                        </li> -->
                 </ul>
                 <form class="form-inline ml-3 mt-md-0">
                     <a href="./user/login.html" class="btn btn-outline-primary my-2 my-sm-0">登入</a>
@@ -119,13 +126,13 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10" id="interpretation">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" id="interpretation">
                     <!-- 释义 -->
                     <!-- <div id="pic_1" style="text-align: center">
                         <img src="../images/p_1.png" alt="五十音图" class="jpImgStyle">
                     </div> -->
-                    
+
                     <br>
                     <h3>五十音图知识点：</h3>
                     <br>
@@ -194,58 +201,64 @@
                         </div>
                         <div class="text-body">
                             <span>
-                            <div style="padding-left: 4em">
-                                <p>
-                                    あ段假名后加『あ』 おかあさん <br>
-                                    い段假名后加『い』 おにいさん<br>
-                                    う段假名后加『う』 つうしん<br>
-                                    え段假名后加『い』 せいかつ 加『え』、如：ねえさん<br>
-                                    お段假名后加『う』 とうばん 加『お』、如：とおい
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="card" id="summary_3">
-                        <div class="card-header  bg-success text-white">
-                            <h5 class="card-title">③ 外来语用『－』 ケーキ</h5>
-                        </div>
-                        <div class="text-body"></div>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-6">
-                    <div class="contact-box">
-                            <form id="ajax-contact" action="#" method="post">
-                                <h3>在这里留下你的足迹吧</h3>
-                                <div class="form-group row">
-                                    <div class="col-lg-6"><input type="text" class="form-control" id="name" name="name"
-                                            placeholder="姓名*" required=""></div>
-                                    <div class="col-lg-6"><input type="email" class="form-control" id="email" name="email"
-                                            placeholder="Email*" required=""></div>
+                                <div style="padding-left: 4em">
+                                    <p>
+                                        あ段假名后加『あ』 おかあさん <br>
+                                        い段假名后加『い』 おにいさん<br>
+                                        う段假名后加『う』 つうしん<br>
+                                        え段假名后加『い』 せいかつ 加『え』、如：ねえさん<br>
+                                        お段假名后加『う』 とうばん 加『お』、如：とおい
+                                    </p>
                                 </div>
-                                <div class="form-group"><input type="text" class="form-control" id="subject" name="subject"
-                                        placeholder="标题"></div>
-                                <div class="form-group"><textarea class="form-control" id="message" name="message" rows="10"
-                                        placeholder="留言内容*" required=""></textarea></div>
-                                <button type="submit" class="btn btn-block btn-outline-primary">提 交</button>
-                                <div id="form-messages"></div>
-                            </form>
+
+                            </span>
                         </div>
+                        <br>
+                        <div class="card" id="summary_3">
+                            <div class="card-header  bg-success text-white">
+                                <h5 class="card-title">③ 外来语用『－』 ケーキ</h5>
+                            </div>
+                            <div class="text-body"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
             </div>
+            <div class="row mt-4">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-box">
+                        <form id="ajax-contact" action="#" method="post">
+                            <h3 class="mb-3">在这里留下你的足迹吧</h3>
+                            <div class="form-group row">
+                                <div class="col-lg-6"><input type="text" class="form-control" id="name" name="name"
+                                        placeholder="姓名*" required=""></div>
+                                <div class="col-lg-6"><input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email*" required=""></div>
+                            </div>
+                            <div class="form-group"><input type="text" class="form-control" id="subject" name="subject"
+                                    placeholder="标题"></div>
+                            <div class="form-group"><textarea class="form-control" id="message" name="message" rows="10"
+                                    placeholder="留言内容*" required=""></textarea></div>
+                            <button type="submit" class="btn btn-block btn-outline-primary">提 交</button>
+                            <div id="form-messages"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
             </div>
+
         </div>
+        <footer class="container">
+            <p class="float-right"><a href="#">回到顶部</a>
+                <p>© 2020 汇世学习平台 </p>
+            </p>
+        </footer>
     </div>
-    <footer class="container">
-        <p class="float-right"><a href="#">回到顶部</a>
-            <p>© 2020 汇世学习平台 </p>
-        </p>
-    </footer>
 </body>
+
 
 </html>

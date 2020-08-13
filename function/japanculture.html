@@ -19,6 +19,12 @@
         /*
     全局通用样式
 */
+        .clearFixed:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
         body {
             color: #000000;
         }
@@ -33,16 +39,15 @@
             height: 100%;
         }
 
-
         /*
 内容部分一
 */
-        #summary .container-fluid .row .col-md-10 {
+        #summary .container-fluid .row .col-md-8 {
             letter-spacing: 5px;
             line-height: 30px;
         }
 
-        #summary .container-fluid .row .col-md-10 p {
+        #summary .container-fluid .row .col-md-8 p {
             letter-spacing: 3px;
             text-indent: 40px;
             margin-top: 0;
@@ -53,17 +58,17 @@
 内容部分二
 */
 
-        #Main_content_1 .container-fluid .row .col-md-5 {
+        #Main_content_1 .container-fluid .row .col-md-4 {
             letter-spacing: 5px;
             line-height: 30px;
         }
 
 
-        #Main_content_1 .container-fluid .row .col-md-5 h4 {
+        #Main_content_1 .container-fluid .row .col-md-4 h4 {
             color: #28a745;
         }
 
-        #Main_content_1 .container-fluid .row .col-md-5 p {
+        #Main_content_1 .container-fluid .row .col-md-4 p {
             letter-spacing: 3px;
             text-indent: 40px;
             margin-top: 0;
@@ -72,21 +77,33 @@
 
 
 
-        #Main_content_2 .container-fluid .row .col-md-10 {
+        #Main_content_2 .container-fluid .row .col-md-8 {
             letter-spacing: 5px;
             line-height: 30px;
         }
 
 
-        #Main_content_2 .container-fluid .row .col-md-10 h4 {
+        #Main_content_2 .container-fluid .row .col-md-8 h4 {
             color: #28a745;
         }
 
-        #Main_content_2 .container-fluid .row .col-md-10 p {
+        #Main_content_2 .container-fluid .row .col-md-8 p {
             letter-spacing: 3px;
             text-indent: 40px;
             margin-top: 0;
             margin-bottom: 1rem;
+        }
+
+        .kidPicBeside {
+            margin-top: 400px;
+            margin-left: 30px;
+            transform: rotate(43deg);
+            -ms-transform: rotate(43deg);
+            /* IE 9 */
+            -moz-transform: rotate(43deg);
+            /* Firefox */
+            -webkit-transform: rotate(43deg);
+            /* Safari 和 Chrome */
         }
     </style>
     <div class="container">
@@ -142,8 +159,8 @@
                         <a class="nav-link" href="function\japaneseBase.html">日语基础</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">日语语法</a>
-                        </li>
+                        <a class="nav-link" href="#">日语语法</a>
+                    </li>
                     <!-- <li class="nav-item">
                                                     <a class="nav-link" href="#">日语单词</a>
                                                 </li> -->
@@ -159,11 +176,16 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-muted" style="margin-top:150px">
-                    <div class="page-header">
-                        <h1>日本文化介绍——节日
-                            <br>
-                            <small>儿童节篇</small>
-                        </h1>
+                    <div class="page-header clearFixed">
+                        <div class="left" style="float: left">
+                            <h1>日本文化介绍——节日
+                                <br>
+                                <small>儿童节篇</small>
+                            </h1>
+                        </div>
+                        <div class="right" style="float: right">
+                            <img src="../images/kidornament.png" width="120px" alt="">
+                        </div>
                     </div>
                     <div class="card" id="summary_1">
                         <div class="card-header  bg-success text-white">
@@ -190,7 +212,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <div class="right">
+                        <img src="../images/kidornament.png" width="120px" alt="" class="kidPicBeside">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -269,7 +295,11 @@
         </div>
     </section>
 
-
+    <footer class="container">
+        <p class="float-right"><a href="#">回到顶部</a>
+            <p>© 2020 汇世学习平台 </p>
+        </p>
+    </footer>
 
     <script src="js/bootstrap.js"></script>
 </body>
