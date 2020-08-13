@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>日语阅读</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/indexStyle.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/contentCSS.css">
     <link href="../images/huishilogosingal.png" type="image/x-icon" rel="shortcut icon">
     <script src="./js/jquery.js"></script>
@@ -17,77 +17,66 @@
 <body>
     <div class="clearfix">
         <div class="container">
-            <nav class="navbar navbar-expand-md fixed-top">
-                <a class="navbar-brand logo-brand" href="#">
-                    <img src="../images/huishibigfont.png" width="auto" height="50" class="d-inline-block align-top"
-                        alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-light navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">首页<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="nav-link" href="#" role="button" id="articleDropdown"
-                                    data-toggle="dropdown">日语文章</a>
-                                <ul class="dropdown-menu" aria-labelledby="articleDropdown">
-
-                                    <li><a class="dropdown-item first-item" href="japaneseReading.html"
-                                            id="dropdownMenuLinkSecond">恋爱</a></li>
-                                    <li><a class="dropdown-item first-item" href="#">战争</a></li>
-                                    <li><a class="dropdown-item first-item" href="#">社会</a></li>
-                                    <li><a class="dropdown-item first-item" href="#">悬疑</a></li>
-                                    <li><a class="dropdown-item first-item" href="#">冒险</a></li>
-                                    <li class="dropdown-divider"></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="nav-link" href="#" role="button" id="cultureDropdown"
-                                    data-toggle="dropdown">读览日本</a>
-                                <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
-                                    <li><a class="dropdown-item first-item" href="japanAddress.html">日本地理</a>
-                                    </li>
-                                    <li><a class="dropdown-item first-item" href="#">历史文化</a></li>
-                                    <li><a class="dropdown-item first-item" href="japanculture.html">人文生活</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="nav-link" id="japaneseLearning" data-toggle="dropdown" role="button"
-                                    href="#">日语学习</a>
-                                <ul class="dropdown-menu" aria-labelledby="japaneseLearning">
-                                    <li>
-                                        <a href="function\japaneseBase.html" class="dropdown-item first-item">日语基础</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item first-item">日语语法</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item first-item">日语单词</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">个人中心</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline ml-3 mt-md-0">
-                        <a href="./user/login.html" class="btn btn-outline-primary my-2 my-sm-0">登入</a>
-                    </form>
-                </div>
-            </nav>
+                <nav class="navbar navbar-expand-md fixed-top">
+                        <a class="navbar-brand logo-brand" href="#">
+                            <img src="./images/huishibigfont.png" width="auto" height="50" class="d-inline-block align-top"
+                                alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-light navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">首页<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link" id="japaneseLearning" data-toggle="dropdown" role="button"
+                                            href="#">日语学习</a>
+                                        <ul class="dropdown-menu" aria-labelledby="japaneseLearning">
+                                            <li>
+                                                <a href="function\japaneseBase.html" class="dropdown-item first-item">日语基础</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item first-item">日语语法</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item first-item">日语单词</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link" href="#" role="button" id="cultureDropdown"
+                                            data-toggle="dropdown">读览日本</a>
+                                        <ul class="dropdown-menu" aria-labelledby="cultureDropdown">
+                                            <li><a class="dropdown-item first-item"
+                                                    href="function/japaneseReading.html">日语文章</a></li>
+                                            <li><a class="dropdown-item first-item" href="function/japanAddress.html">日本地理</a>
+                                            </li>
+                                            <li><a class="dropdown-item first-item" href="#">历史文化</a></li>
+                                            <li><a class="dropdown-item first-item" href="function/japanculture.html">人文生活</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">文化周边</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">个人中心</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline ml-3 mt-md-0">
+                                <a href="./user/login.html" class="btn btn-outline-primary my-2 my-sm-0">登入</a>
+                            </form>
+                        </div>
+                    </nav>
         </div>
         <hr class="featurette-divider">
         <div class="jumbotron adverIntro">
