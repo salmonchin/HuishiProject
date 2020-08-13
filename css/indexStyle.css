@@ -3,7 +3,7 @@
     color: #fff;
 }
 .navbar{
-    background-color: rgba(140, 202, 151, 0.25);
+    background-color: rgba(140, 202, 151, 0.25)!important;
     padding: 0;
 }
 
@@ -57,7 +57,7 @@ a.nav-link:hover {
     
     color: #fff;
 }
-.first-item:active {
+.first-item:hover {
     background-color: #007bff;
     color: #fff;
 }
