@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link href="../images/汇世学习.png" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>userReg</title>
+</head>
+
+<body>
+    <style>
+        html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 770px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.btn-hs-primary{
+  width: 300px;
+  color: #007bff;
+  background-color: #fff;
+  border-color: #007bff;
+  
+}
+.btn-hs-primary:hover{
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+a{
+    color: #007bff;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #007;
+}
+footer{
+    width: 750px;
+}
+.form-group.buttonGroup{
+  width: 256px;
+  margin: 0 auto;
+  display: block;
+  /* hanging-punctuation:  */
+}
+
+    </style>
+    <script>
+        // 二级联动
+//=============================//
+var citys = {
+    "辽宁": ["大连", "沈阳"],
+    "大阪": ["大阪市", "长野市"],
+};
+
+var regions = {
+    "大连": ["中山区", "西岗区", "沙河口区", "甘井子区"],
+    "沈阳": ["和平区", "沈河区", "皇姑区", "于洪区"],
+    "大阪市": ["中央区", "大正区", "西区", "港区", "浪速区"],
+    "长野市": ["须坂市", "千曲市", "信浓市"],
+}
+
+function sel1(th) {
+    var cit = citys[th.value];
+    var str = "";
+    for (var i = 0; i < cit.length; i++) {
+        str += "<option>" + cit[i] + "</option>";
+    }
+    var city = document.getElementById("city");
+    city.innerHTML = str;
+}
+
+function sel2(th) {
+    var regi = regions[th.value];
+    var str1 = "";
+    for (var i = 0; i < regi.length; i++) {
+        str1 += "<option>" + regi[i] + "</option>";
+    }
+    var region = document.getElementById("region");
+    region.innerHTML = str1;
+}
+//=============================//
+
+// 表单验证
+//验证用户名
+function codeUser() {
+    return codedata("user", /^[\u4e00-\u9fa5]{2,4}$/)
+}
+//验证邮箱
+function codeEmail() {
+    return codedata("email", /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/)
+}
+function codePass() {
+    return codePassData("password",/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/)
+}
+//封装
+function codedata(a, reg1) {
+    //获取用户的用户信息
+    var user = document.getElementById(a).value
+    var span = document.getElementById(a + "Span")
+    var alt = document.getElementById(a).alt
+    //创建校验规则
+    var reg = reg1;
+    //校验
+    if (user == "" || user == null) {
+        span.innerHTML = alt + "不能为空❌"
+        return false
+    } else if (reg.test(user)) {
+        span.innerHTML = alt + "✅"
+        return true
+    } else {
+        span.innerHTML = alt + "不符合规则❌"
+        return false
+    }
+}
+
+//密码封装
+
+function codePassData(a, reg1) {
+    //获取用户的用户信息
+    var user = document.getElementById(a).value
+    var span = document.getElementById(a + "Span")
+    var alt = document.getElementById(a).alt
+    //创建校验规则
+    var reg = reg1;
+    //校验
+    if (user == "" || user == null) {
+        span.innerHTML = alt + "不能为空❌"
+        return false
+    } else if (reg.test(user)) {
+        span.innerHTML = alt + "✅"
+        return true
+    } else {
+        span.innerHTML = alt + "密码必须为6~18位，且包含字母和数字"
+        return false
+    }
+}
+    </script>
+    <div class="container clearfix">
+        <form action="" method="POST" class="form-signin" enctype="multipart/form-data">
+            <div style="text-align: center;">
+                <img class="mb-4" src="../images/huishilogosingal.png" alt="" width="auto" height="144">
+            </div>
+            <h3 class="mb-3 font-weight-normal text-center">注册
+            </h3>
+            <div class="form-group">
+                    <label for="inputTxt" class="sr-only">用户名</label>
+                    <input type="text" id="user" name="user" onblur="codeUser()" class="inputLogin form-control" placeholder="用户名" alt="用户名" required>
+                    <span id="userSpan"></span>
+                </div>
+            <div class="form-group">
+                <label for="inputEmail" class="sr-only">电子邮箱</label>
+                <input type="email" name="email" id="email" alt="邮箱" onblur="codeEmail()" class="inputLogin form-control" placeholder="电子邮箱地址" required>
+                <span id="emailSpan"></span>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="sr-only">密码</label>
+                <input type="password" name="password" id="password" alt="密码" onblur="codePass()" class="inputLogin form-control" placeholder="密码" required="">
+                <span id="passwo"></span>
+            </div>
+            <!-- <div class="form-group">
+                <label>性别</label>
+                <input type="radio" name="gender" value="1" checked>男
+                <input type="radio" name="gender" value="0" checked>女
+            </div> -->
+            <!-- <div class="form-group">
+                <label>请选择你的出身：</label>
+                <select id="provinces" onchange="sel1(this)">
+                    <option>请选择</option>
+                    <option>辽宁</option>
+                    <option>大阪</option>
+                </select>
+                <select id="city" onchange="sel2(this)">
+                    <option>请选择</option>         
+                </select>
+                <select id="region">
+                    <option>请选择</option>
+                </select>
+            </div> -->
+            <div class="form-group buttonGroup">
+                <input type="submit" value="注册" class="btn btn-outline-primary btn-rounded btn-block">
+                <input type="reset" value="重置" class="btn btn-outline-danger btn-rounded btn-block">
+            </div>
+            <footer class="container">
+                    <p class="float-right mr-4"><a href="../index.html">回到首页</a></p>
+                    <p class="mt-5 mb-3 text-muted">© 2019 汇世日语学习平台</p>
+                </footer>
+        </form>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

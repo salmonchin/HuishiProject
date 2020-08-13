@@ -1,0 +1,72 @@
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #fff;
+}
+.navbar{
+    background-color: rgba(140, 202, 151, 0.25);
+    padding: 0;
+}
+
+.img-style {
+    width: 140px;
+    height: 140px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.containerBody {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.nav-item {
+    margin-left: 20px;
+    height: auto;
+}
+
+.inputTextBox {
+    width: 40px;
+}
+
+/* .logo-brand{
+    margin: 0 auto;
+} */
+a.nav-link {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    color: #007bff;
+}
+a.nav-link:hover {
+    -webkit-transition: all .8s; 
+    -moz-transition: all .8s; 
+    -ms-transition: all .8s; 
+    -o-transition: all .8s; 
+    transition: all .8s;
+    background-color: #007bff;
+    color: #fff;
+}
+/* a.nav-link:hover,
+.first-item:hover {
+    color: #22af47;
+}
+
+.first-item {
+    color: #22af47;
+} */
+.nav-item:hover{
+    
+    color: #fff;
+}
+.first-item:active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.background-image {
+    margin-bottom: 100px;
+}
+
+img.d-inline-block.align-top{
+    height: 50px!important;
+    width: auto;
+}

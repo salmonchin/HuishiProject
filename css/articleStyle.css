@@ -1,0 +1,11 @@
+.articleBox{
+    margin-top: 200px;
+}
+.articleContent{
+    line-height: 3em;
+    font-size: 1em;
+    text-indent: 2em;
+}
+h3{
+    text-align: center;
+}

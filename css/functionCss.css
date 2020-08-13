@@ -1,0 +1,49 @@
+body{
+    background-color: #f9f9f9;
+}
+.transButton{
+    margin-top: 100px;
+}
+.btn-hs-primary{
+    width: 180px;
+    color: #48d1cc;
+    background-color: #fff;
+    border-color: #48d1cc;
+    
+    
+}
+.btn-hs-primary:hover{
+    background-color: #30c8c3;
+    border-color: #30c8c3;
+    color: #fff;
+}
+.btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child){
+    margin-left: 20px;
+}
+.exchange-mask{
+    margin-left: 20px;
+    text-align: center;
+}
+.trans-Box{
+    margin-top: 30px;
+    /* width: 445px; */
+    width: 100%;
+    margin-left: 19px;
+    height: 200px;
+    text-align: start;
+}
+.btn-group > .btn, .btn-group-vertical > .btn{
+    margin-left: 20px;
+}
+/* .trans-Chinese-Button{
+    
+} */
+.show-Box{
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    height: 200px;
+    width: 100%;
+}
+.footerBox{
+    margin-top: 400px;
+}

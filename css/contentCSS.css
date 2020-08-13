@@ -1,0 +1,22 @@
+
+footer{
+    padding-top: 30px;
+}
+.btn-hs-primary{
+    width: 300px;
+    color: #48d1cc;
+    background-color: #fff;
+    border-color: #48d1cc;
+    
+}
+.btn-hs-primary:hover{
+    background-color: #30c8c3;
+    border-color: #30c8c3;
+    color: #fff;
+}
+.adverIntro{
+    background-color: #f8f8f8;
+}
+a{
+    text-decoration: none !important;
+}
