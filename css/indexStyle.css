@@ -32,8 +32,8 @@
     margin: 0 auto;
 } */
 a.nav-link {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: #007bff;
 }
 a.nav-link:hover {
