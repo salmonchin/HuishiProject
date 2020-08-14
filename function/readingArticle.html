@@ -87,12 +87,21 @@
             height: 100px;
             margin-top: 500px;
         }
+        /* 漂流瓶模态框 */
+        .driftBottle-modelContent{
+            /* margin:0 auto; */
+            margin-top:50%;
+        }
+        .driftBottleBox{
+            height: 100px;
+            width: 100%;
+        }
     </style>
     <div class="clearfix">
         <div class="container">
                 <nav class="navbar navbar-expand-md fixed-top">
                         <a class="navbar-brand logo-brand" href="#">
-                            <img src="./images/huishibigfont.png" width="auto" height="50" class="d-inline-block align-top"
+                            <img src="../images/huishibigfont.png" width="auto" height="50" class="d-inline-block align-top"
                                 alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -186,7 +195,7 @@
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content">
+                        <div class="modal-content driftBottle-modelContent">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">扔出去你的漂流瓶吧~</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -202,14 +211,14 @@
                     </div> -->
                                     <div class="form-group">
                                         <label for="writeText"></label>
-                                        <input type="text" class="form-control" id="writeText"
+                                        <input type="text" class="form-control driftBottleBox" id="writeText"
                                             placeholder="写下你此刻的心情或学习心得吧~">
                                     </div>
                                     <!-- <div class="form-group form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div> -->
-                                    <button type="submit" class="btn btn-outline-primary btn-block">发送</button>
+                                    <button type="submit" class="btn btn-outline-success btn-block">发送</button>
                                 </form>
                             </div>
                             <!-- <div class="modal-footer">
