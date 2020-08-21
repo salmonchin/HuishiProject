@@ -1,14 +1,5 @@
-### 汇世学习管理系统
+### 汇世学习平台
    
 > license: MIT
-
-| Platform | Build Status |
-| --- | --- |
-| web | complete |
-| Android | fail |
-| IOS | building |
-
-#### 项目运行方法
-   cd huishi
-
+本分支为汇世学习平台的静态站部分
     
